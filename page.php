@@ -3,7 +3,7 @@ get_header();
 while (have_posts()) {
     the_post(); ?>
 
-<div class="page-banner">
+    <div class="page-banner">
       <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri(
           'images/ocean.jpg'
       ); ?>)"></div>
@@ -71,13 +71,13 @@ while (have_posts()) {
       </div>
     </div>
 
-    <div class="page-section page-section--beige">
+    <!-- <div class="page-section page-section--beige">
       <div class="container container--narrow generic-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptates vero vel temporibus aliquid possimus, facere accusamus modi. Fugit saepe et autem, laboriosam earum reprehenderit illum odit nobis, consectetur dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos molestiae, tempora alias atque vero officiis sit commodi ipsa vitae impedit odio repellendus doloremque quibusdam quo, ea veniam, ad quod sed.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptates vero vel temporibus aliquid possimus, facere accusamus modi. Fugit saepe et autem, laboriosam earum reprehenderit illum odit nobis, consectetur dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos molestiae, tempora alias atque vero officiis sit commodi ipsa vitae impedit odio repellendus doloremque quibusdam quo, ea veniam, ad quod sed.</p>
       </div>
-    </div>
+    </div> -->
 
 
 <?php
