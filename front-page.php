@@ -28,8 +28,11 @@
 
           <div class="event-summary">
             <a class="event-summary__date t-center" href="<?php the_permalink(); ?>">
-              <span class="event-summary__month"><?php the_time('M'); ?></span>
-              <span class="event-summary__day"><?php the_time(
+              <span class="event-summary__month"><?php
+              $eventDate = new DateTIme(get_field('event_date'));
+              echo $eventDate->format('M');
+              ?></span>
+              <span class="event-summary__day"><?php echo $eventDate->format(
                   'd'
               ); ?></span>     
             </a>
