@@ -34,7 +34,8 @@ function university_files()
 {
 
     wp_enqueue_script(
-        'googleMap','//maps.googleapis.com/maps/api/js?key=AIzaSyBIe1mzWRLJqCPVhXCm2dJ1p_1Ia6V6yPY',
+        // 'googleMap','//maps.googleapis.com/maps/api/js?key=AIzaSyBIe1mzWRLJqCPVhXCm2dJ1p_1Ia6V6yPY',
+        'googleMap','//maps.googleapis.com/maps/api/js?key=',
         NULL,
         '1.0',
         true
@@ -113,7 +114,8 @@ function university_adjust_queries($query)
 add_action('pre_get_posts', 'university_adjust_queries');
 
 function universityMapKey($api) {
-    $api['key'] = 'AIzaSyBIe1mzWRLJqCPVhXCm2dJ1p_1Ia6V6yPY';
+    // $api['key'] = 'AIzaSyBIe1mzWRLJqCPVhXCm2dJ1p_1Ia6V6yPY';
+    $api['key'] = '';
     return $api;
 
 }
