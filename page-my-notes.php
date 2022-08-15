@@ -17,6 +17,7 @@ while (have_posts()) {
         <input class="new-note-title" placeholder="Title">
         <textarea class="new-note-body" placeholder="Your note here..."></textarea>
         <span class="submit-note">Create Note</span>
+        <span class="note-limit-message">Note limit reached: delete an existing not to make room for a new one.</span>
     </div>
     <ul class="min-list link-list" id="my-notes">
         <?php
@@ -34,6 +35,7 @@ while (have_posts()) {
                     <span class="delete-note"><i class="fa fa-trash-o" aria-hidden="true">Delete</i></span>
                     <textarea readonly class="note-body-field"><?php echo esc_textarea(get_the_content()); ?></textarea>
                     <span class="update-note btn btn--blue btn--small"><i class="fa fa-arrow-right" aria-hidden="true"> Save</i></span>
+                    
                 </li>
             <?php }
             ?>
